@@ -1,0 +1,21 @@
+
+<h1>HELLO FROM INDEX</h1>
+<h2>Haloo <%= nama %></h2>
+
+
+<h4>Daftar Mahasiswa</h4>
+
+<% if (mahasiswa.length === 0) { %>
+    <p>Data Mahasiswa Masih kosong</p>
+<% } else { %>
+    <% mahasiswa.forEach(e => { %>
+        <ul>
+            <li>Nama : <%= e.nama %></li>
+            <li>Email : <%= e.email %></li>
+        </ul>
+    <% }) %>
+    <% } %>
+
+    
+
+
